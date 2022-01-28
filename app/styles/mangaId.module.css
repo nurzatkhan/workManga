@@ -1,0 +1,39 @@
+.div__body{
+    display:flex;
+    flex-wrap:wrap;
+}
+.king__div{
+    margin-top: 10px;
+    text-align:center;
+    width: 350px;
+    /* border-right: thick double #483D8B;
+    border-bottom: thick double #483D8B;
+    border-top: thick double #483D8B; */
+    border-radius: 5px;
+    background-color: #D8BFD8;
+    padding: 15px;  
+    
+
+}
+.king__img__div img {
+    border: thick double #483D8B;
+    border-radius: 5px;
+    width: 300px;
+}
+.chapterDiv{
+    margin-top: 50px;   
+    margin-left: 50px;
+}
+.one__chapter__div{
+    margin-top: 5px;
+    text-decoration: none;
+}
+.one__chapter__div a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.one__chapter__div a:hover {
+    text-decoration: underline;
+    color: rgb(255, 0, 0);
+}

@@ -1,0 +1,31 @@
+create table manga_name(
+id serial primary key,
+name varchar(255),
+url varchar(255),
+description text
+);
+
+create table manga_chapter (
+id serial primary key,
+id_manga_name integer references manga_name(id),
+name_manga_chapter varchar(255)
+);
+
+create table manga_page(
+id serial primary key,
+id_manga_chapter integer references manga_chapter(id),
+page_namber integer,
+url_page varchar(255)
+);
+
+
+	insert into manga_name (name, url, description ) values ('One Pice','*****/****','One Piece (яп. ワンピース ван пи:су, «Ван-Пис») — сёнэн-манга за авторством Эйитиро Оды, выходящая с 19 июля 1997 года по настоящее время в журнале Weekly Shonen Jump.
+
+One Piece повествует о приключениях пиратской команды под названием «Пираты Соломенной шляпы» во главе с капитаном Манки Д. Луффи, в детстве съевшим Дьявольский плод Гому Гому но Ми, давший ему способность растягиваться и сжиматься, как резина. Вместе со своей командой Луффи ищет легендарное сокровище, известное как «Ван-Пис», чтобы стать Королём пиратов.');
+
+
+	
+	insert into manga_chapter (id_manga_name, name_manga_chapter) values (1,'Том 100 Глава 1036 - Бусидо - это путь смерти');
+
+	
+	insert into manga_page(id_manga_chapter, page_namber, url_page) values (1,1,'*****');

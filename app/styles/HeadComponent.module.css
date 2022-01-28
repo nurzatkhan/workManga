@@ -1,0 +1,21 @@
+
+.nav{
+    position:fixed;
+    height:90px;
+    left:0;
+    top:0;
+    right:0;
+    background:	#006400;
+    display:flex; 
+    justify-content: space-around; 
+    align-items:center;
+    font-family: 'Anton', sans-serif;
+    }
+.nav a{
+    color:#fff;
+    text-decoration:none;
+}
+.nav h1{
+    color: rgb(0, 0, 0);
+    
+}

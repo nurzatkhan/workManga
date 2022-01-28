@@ -1,0 +1,149 @@
+.bo{
+    margin: 0;
+}
+.app{
+    width:  auto;
+    height: auto;
+    display: flex;
+    flex-wrap:wrap;
+    margin: 15px;
+
+
+    /* align-items:center;     */
+}
+
+.card{
+    position: relative;
+    overflow: hidden;
+    width: 150px;
+    height: auto;
+    margin: 20px;
+    cursor: grab;
+    display: inline-block;
+
+}
+.butonCardX{
+    position: absolute;
+    right: 3px;
+    top: -83px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(185, 185, 185, 0.897);
+    transition-duration: 300ms;
+
+}
+.card:hover .butonCardX{
+    top:3px;
+}
+.card img{
+
+    border:3px solid;
+    border-color: black; 
+    border-radius: 4px ;
+
+    width: 145px;
+}
+.divBody{
+    height: 800px;
+    margin-left: 320px;
+    display: flex;
+}
+
+.divInutsForm{
+
+    padding: 5px;
+    height: 80%;
+    position: fixed;
+    left: 10px;
+    top: 110px;
+
+    
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    border-right: thick  double #01ac26;
+}
+.divInutsFormSelect select{ 
+    height: 40px;
+    width: 100%;
+}
+.divInutsFormName{
+    margin-top: 20px;
+    margin-bottom: 20px ;
+}
+.divInutsFormName input{
+    height: 30px;
+    width: 95%;
+}
+.divInutsFormFile{
+    
+}
+.divInutsFormDragOnDrop2{
+    flex: 1 1 auto;
+    height: 400px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.divInutsFormDragOnDrop{
+    height: 400px;
+    width: 250px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: dashed rgb(0, 141, 71);
+    flex-direction:column;
+    /* animation-duration: 3s; */
+}
+.divInutsFormDragOnDrop button{
+    height: 80px;
+    width: 80px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 40px;
+}
+.divInutsFormDragOnDrop button:hover {background-color: #3e8e41}
+  
+.divInutsFormDragOnDrop button:active {
+  background-color: #3e8e41;
+  transform: translateY(4px);
+}
+
+
+.divInutsFormDragOnDropDiv{
+    flex: 1 1 auto;
+    border: dashed rgb(50, 155, 1);
+    border-radius: 25px;
+    height: 350px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* animation-duration: 3s; */
+}
+.divInutsFormButtonSabmit button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+}
+  
+  .divInutsFormButtonSabmit button:hover {background-color: #3e8e41}
+  
+  .divInutsFormButtonSabmit button:active {
+    background-color: #3e8e41;
+    transform: translateY(4px);
+  }
